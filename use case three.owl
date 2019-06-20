@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/legalknowledge/hrchatbot.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/legalknowledge/hrchatbot.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/legalknowledge/hrchatbot.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ACHPR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Applicable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRC_Complaint_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRC_Individual_Complaints"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRC_Special_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Rights_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ineligible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Not-Applicable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Violation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has-application"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has-user"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contains-sensitive-matters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-UN-language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-clear-evidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-keyword"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-met-requirements"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-question"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-required-information"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-sufficient-evidence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-user-as-victim"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has-written-consent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is-in-consideration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is-located-in-Namibia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#u001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#u002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#u003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#v001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#v002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#v003"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Applicable"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-clear-evidence"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-user-as-victim"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-UN-language"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has-met-requirements"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#is-in-consideration"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Applicable"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-user-as-victim"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-written-consent"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has-required-information"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HRC_Complaint_Procedure"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-description"/>
+                <Literal>The right to a fair trial</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#is-located-in-Namibia"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HRC_Complaint_Procedure"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-description"/>
+                <Literal>The right to the health of women, including sexual and reproductive health</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#is-located-in-Namibia"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HRC_Individual_Complaints"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-description"/>
+                <Literal>Discrimination based on sex</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#is-located-in-Namibia"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Ineligible"/>
+        <DataHasValue>
+            <DataProperty IRI="#is-located-in-Namibia"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Not-Applicable"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-clear-evidence"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-user-as-victim"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-UN-language"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has-met-requirements"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#is-in-consideration"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Not-Applicable"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#has-user-as-victim"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#has-written-consent"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#has-required-information"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ACHPR"/>
+        <Class IRI="#Human_Rights_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure"/>
+        <Class IRI="#Human_Rights_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-UN-language"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-clear-evidence"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-met-requirements"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-sufficient-evidence"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-user-as-victim"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#is-in-consideration"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints"/>
+        <Class IRI="#Human_Rights_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#contains-sensitive-matters"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-language"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-required-information"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-user-as-victim"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-written-consent"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRC_Special_Procedure"/>
+        <Class IRI="#Human_Rights_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-gender"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has-application"/>
+            <Class IRI="#Application"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has-user"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-keyword"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has-question"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#is-located-in-Namibia"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Applicable"/>
+        <Class IRI="#Not-Applicable"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#HRC_Individual_Complaints_Form"/>
+        <NamedIndividual IRI="#a001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <NamedIndividual IRI="#a002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HRC_Complaint_Procedure_Form"/>
+        <NamedIndividual IRI="#a003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#u001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#u002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#u003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Violation"/>
+        <NamedIndividual IRI="#v001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Violation"/>
+        <NamedIndividual IRI="#v002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Violation"/>
+        <NamedIndividual IRI="#v003"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-application"/>
+        <NamedIndividual IRI="#v001"/>
+        <NamedIndividual IRI="#a001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-user"/>
+        <NamedIndividual IRI="#v001"/>
+        <NamedIndividual IRI="#u001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-application"/>
+        <NamedIndividual IRI="#v002"/>
+        <NamedIndividual IRI="#a002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-user"/>
+        <NamedIndividual IRI="#v002"/>
+        <NamedIndividual IRI="#u002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-application"/>
+        <NamedIndividual IRI="#v003"/>
+        <NamedIndividual IRI="#a003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has-user"/>
+        <NamedIndividual IRI="#v003"/>
+        <NamedIndividual IRI="#u003"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contains-sensitive-matters"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-language"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal>English</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-required-information"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-user-as-victim"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-written-consent"/>
+        <NamedIndividual IRI="#a001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-UN-language"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-clear-evidence"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-met-requirements"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-sufficient-evidence"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-user-as-victim"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is-in-consideration"/>
+        <NamedIndividual IRI="#a002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-UN-language"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-clear-evidence"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-met-requirements"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-sufficient-evidence"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-user-as-victim"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is-in-consideration"/>
+        <NamedIndividual IRI="#a003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-gender"/>
+        <NamedIndividual IRI="#u001"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-gender"/>
+        <NamedIndividual IRI="#u002"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-gender"/>
+        <NamedIndividual IRI="#u003"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-description"/>
+        <NamedIndividual IRI="#v001"/>
+        <Literal>Discrimination based on sex</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-keyword"/>
+        <NamedIndividual IRI="#v001"/>
+        <Literal>Gender</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-question"/>
+        <NamedIndividual IRI="#v001"/>
+        <Literal>Was your right violated based on who you are or what group you belong to?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is-located-in-Namibia"/>
+        <NamedIndividual IRI="#v001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-description"/>
+        <NamedIndividual IRI="#v002"/>
+        <Literal>The right to the health of women, including sexual and reproductive health</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-keyword"/>
+        <NamedIndividual IRI="#v002"/>
+        <Literal>Health</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-question"/>
+        <NamedIndividual IRI="#v002"/>
+        <Literal>Were you deprived of your basic rights?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is-located-in-Namibia"/>
+        <NamedIndividual IRI="#v002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-description"/>
+        <NamedIndividual IRI="#v003"/>
+        <Literal>The right to a fair trial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-keyword"/>
+        <NamedIndividual IRI="#v003"/>
+        <Literal>Due Process</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has-question"/>
+        <NamedIndividual IRI="#v003"/>
+        <Literal>Were you treated unfairly in the legal system?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is-located-in-Namibia"/>
+        <NamedIndividual IRI="#v003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has-application"/>
+        <Class IRI="#Application"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has-user"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contains-sensitive-matters"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-UN-language"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-clear-evidence"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-domestic-remedies-exhausted"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-gender"/>
+        <DataOneOf>
+            <Literal>Female</Literal>
+            <Literal>Male</Literal>
+            <Literal>Other</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-ineffective-domestic-remedies"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-keyword"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-language"/>
+        <DataOneOf>
+            <Literal>Arabic</Literal>
+            <Literal>Chinese</Literal>
+            <Literal>English</Literal>
+            <Literal>French</Literal>
+            <Literal>Russian</Literal>
+            <Literal>Spanish</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-met-requirements"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-question"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-required-information"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-sufficient-evidence"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-user-as-victim"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has-written-consent"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is-in-consideration"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is-located-in-Namibia"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
