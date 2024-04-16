@@ -1,2 +1,3 @@
-# VHRL-ontology
-In this repository is stored the code for the ontologies created in the paper 'Knowledge Representation for a Human Rights Chatbot'. Three ontologies were created, each representing one iteration of the ontology design pattern. The ontologies were created in Protègè and are stored in the OWL syntax. 
+# VHRL - Ontologies
+
+This repository stores the ontologies that were created in the Bachelor's thesis named 'Knowledge Representation for a Human Rights Chatbot'. This thesis was written as a part of the Virtual Human Rights Lawyer project. The three ontology files present in this repository represent the three design iterations. The ontologies were created using Protègè and are stored in the OWL format. 
